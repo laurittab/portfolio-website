@@ -7,8 +7,21 @@ import MainBox from "./components/MainBox.jsx";
 import "./styles/styles.css";
 // Home function that is reflected across the site
 export default function App() {
+
+  /*only works when rerender screen*/
+  function getStyling(){
+    if (window.innerWidth < 600) return "500vh";
+    else return "150vh";
+  }
+  const styles = {
+    backgroundColor: "rgb(255, 255, 230)",
+    paddingLeft: "20px",
+    fontFamily: "Roboto, sans-serif",
+    height: getStyling(),
+  };
+
   return (
-    <div style={{marginLeft: "20px", fontFamily: "Roboto, sans-serif" }}>
+    <div style={styles}>
       <MainBox />
     </div>
   );

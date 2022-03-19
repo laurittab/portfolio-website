@@ -90,7 +90,7 @@ export default function Projects() {
           alt="react website"
           text="Full feature website using Material UI library and EmailJS. Styling for the site is primaryly completed using MUI's powerful tools. Visitors recieve an auto reply to their contact email address after using the contact form.
               service."
-          href="https://http://laurittaburrows.tech/"
+          href="https://laurittaburrows.tech/"
         />
       </Grid>
       <Grid item xs={12} md={3} lg={4}>

@@ -25,6 +25,7 @@ export default function CV() {
       </Grid>
       <Grid item xs={12} md={4} sx={{ mt: 5 }}>
         <Button
+          sx={{mt:4, mx:3}}
           color="secondary"
           variant="outlined"
           size="large"

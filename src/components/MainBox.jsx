@@ -28,39 +28,38 @@ export default function MainBox() {
   //WAS   x={{ display: 'flex',justifyContent: 'center', flexWrap: 'wrap' }} 
   
   return (
-   
-      <Grid container  spacing={2} justify="centre">
-        <Grid item xs={11} style={{textAlign: "center"}}>
-          <Tabs
-            textColor="secondary"
-            indicatorColor="secondary"
-            value={value}
-            onChange={(event, value) => setValue(value)}
-            centered
-          >
-            <Tab label="about" />
-            <Tab label="my projects" />
-            <Tab label="cv" />
-            <Tab label="contact" />
-          </Tabs>
-        </Grid>
-        <Grid item xs={11}>
-          <Grid>
-            <TabPanel value={value} index={0}>
-              <About />
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              <Projects />
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-              <CV />
-            </TabPanel>
-            <TabPanel value={value} index={3}>
-              <Contact />
-            </TabPanel>
-          </Grid>
+    <Grid container spacing={2} justify="centre">
+      <Grid item xs={11} style={{ textAlign: "center" }}>
+        <Tabs
+          textColor="secondary"
+          indicatorColor="secondary"
+          value={value}
+          onChange={(event, value) => setValue(value)}
+          centered
+        >
+          <Tab sx={{ fontSize: "medium" }} label="about" />
+          <Tab sx={{ fontSize: "medium" }} label="my projects" />
+          <Tab sx={{ fontSize: "medium" }} label="cv" />
+          <Tab sx={{ fontSize: "medium" }} label="contact" />
+        </Tabs>
+      </Grid>
+      <Grid item xs={11}>
+        <Grid>
+          <TabPanel value={value} index={0}>
+            <About />
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <Projects />
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <CV />
+          </TabPanel>
+          <TabPanel value={value} index={3}>
+            <Contact />
+          </TabPanel>
         </Grid>
       </Grid>
+    </Grid>
   );
 }
 

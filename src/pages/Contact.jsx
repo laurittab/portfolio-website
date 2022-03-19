@@ -27,12 +27,12 @@ const AlertMessage = React.forwardRef(function Alert(props, ref) {
 });
 //main funtion for export
 export default function Contact() {
-  init("cRUzjz5-IOwqHJ4bE");
+  init("4IMjpF4P37Aco0LkW");
 
   const [open, setOpen] = useState(false);
   const [toSend, setToSend] = useState({
     from_name: "",
-    to_name: "Lauritta Burrows",
+    to_name: "Lauritta",
     reply_to: "",
     phone: "",
     message: "",
@@ -41,7 +41,7 @@ export default function Contact() {
   function resetParams() {
     setToSend({
       from_name: "",
-      to_name: "Lauritta Burrows",
+      to_name: "Lauritta",
       reply_to: "",
       phone: "",
       message: "",
@@ -51,7 +51,7 @@ export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    send("service_pcojumq", "template_4zxpeuf", toSend)
+    send("service_fx84vcd", "template_7spsrqg", toSend)
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
@@ -96,6 +96,7 @@ export default function Contact() {
           <Item>
             {/*backgroundColor is the same as className "greyBG"*/}
             <Card
+              className="greyBG"
               sx={{
                 mt: 4,
                 maxWidth: 900,
@@ -124,7 +125,7 @@ export default function Contact() {
                   <Grid container spacing={1}>
                     <Grid item xs={12} md={4}>
                       <TextField
-                        sx={{ backgroundColor: "white" }}
+                        sx={{ backgroundColor: "rgb(255, 255, 230)" }}
                         label="Name"
                         name="from_name"
                         placeholder="Enter your name"
@@ -137,7 +138,7 @@ export default function Contact() {
                     </Grid>
                     <Grid item xs={12} md={4}>
                       <TextField
-                        sx={{ backgroundColor: "white" }}
+                        sx={{ backgroundColor: "rgb(255, 255, 230)" }}
                         type="email"
                         label="Email"
                         name="reply_to"
@@ -151,7 +152,7 @@ export default function Contact() {
                     </Grid>
                     <Grid item xs={12} md={4}>
                       <TextField
-                        sx={{ backgroundColor: "white" }}
+                        sx={{ backgroundColor: "rgb(255, 255, 230)" }}
                         type="number"
                         label="Phone"
                         name="phone"
@@ -164,7 +165,7 @@ export default function Contact() {
                     </Grid>
                     <Grid item xs={12}>
                       <TextField
-                        sx={{ backgroundColor: "white" }}
+                        sx={{ backgroundColor: "rgb(255, 255, 230)" }}
                         label="Message"
                         name="message"
                         placeholder="Type your message here"

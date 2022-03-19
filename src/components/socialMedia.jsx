@@ -11,7 +11,7 @@ export default function SocialMedia() {
   return (
     <Grid container>
       <Box component={Grid} item md={12} display={{ xs: "none", md: "block" }}>
-        <Stack spacing={3} sx={{ p: 0, ml: 0 }}>
+        <Stack spacing={1} sx={{ p: 0, ml: 0 }}>
           <Fab
             href="http://laurittaburrows.tech/"
             size="medium"
