@@ -29,7 +29,7 @@ export default function SocialMedia() {
             <LinkedInIcon />
           </Fab>
           <Fab
-            href="https://twitter.com/reetzonline"
+            href="https://twitter.com/laurittaAWS"
             size="medium"
             color="primary"
             aria-label="twitter"

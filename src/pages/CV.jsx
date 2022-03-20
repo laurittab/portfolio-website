@@ -25,11 +25,12 @@ export default function CV() {
       </Grid>
       <Grid item xs={12} md={4} sx={{ mt: 5 }}>
         <Button
-          sx={{mt:4, mx:3}}
+          sx={{ mt: 4, mx: 3 }}
           color="secondary"
           variant="outlined"
           size="large"
-          href="https://github.com/laurittab/CV/raw/main/Lauritta%20Burrows%20CV%20-%20Software%20Developer%20-%20March%202022%20.docx"
+          /*copy link address from download button in github*/
+          href="https://github.com/laurittab/CV/raw/a1271efe2d157c1b109ed92a92561e6a2d72742e/Lauritta%20Burrows%20CV%20-%20Software%20Developer%20-%20March%202022%20.docx"
           className="download"
         >
           <Typography variant="h5" color="secondary">
@@ -47,7 +48,7 @@ export default function CV() {
               Certifications
             </Typography>
             <Typography component={"ul"} variant="body1" className="darkFont">
-              <li>Scrum Developer Certified (present)</li>
+              <li>Scrum Fundamentals Certified</li>
               <li>ITIL v4 Foundation</li>
             </Typography>
           </Item>
