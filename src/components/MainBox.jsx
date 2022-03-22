@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
 //import features from Material UI libraries
-import { Box, Grid, IconButton, Tab, Tabs } from "@mui/material";
+import { AppBar, Box, Grid, IconButton, Tab, Tabs } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 //import components
 import SocialMedia from "./socialMedia.jsx";
@@ -20,16 +21,11 @@ function TabPanel(props) {
 //main funtion for export
 export default function MainBox() {
   const [value, setValue] = useState(0);
-//sx={{maxWidth: 3000}}
-  //sx={{ display: 'flex',justifyContent: 'center', flexWrap: 'wrap' }} 
-  //sx={{m: "auto"}}
-  
-  
-  //WAS   x={{ display: 'flex',justifyContent: 'center', flexWrap: 'wrap' }} 
-  
+  const routes = ["/about", "/projects", "/cv", "contact"];
+  console.log(value);
   return (
-    <Grid container spacing={2} justify="centre">
-      <Grid item xs={11} style={{ textAlign: "center" }}>
+    <div>
+      <nav>
         <Tabs
           textColor="secondary"
           indicatorColor="secondary"
@@ -37,30 +33,46 @@ export default function MainBox() {
           onChange={(event, value) => setValue(value)}
           centered
         >
-          <Tab sx={{ fontSize: "medium" }} label="about" />
-          <Tab sx={{ fontSize: "medium" }} label="my projects" />
-          <Tab sx={{ fontSize: "medium" }} label="cv" />
-          <Tab sx={{ fontSize: "medium" }} label="contact" />
+          <Tab
+            component={Link}
+            to={routes[0]}
+            sx={{ fontSize: "medium" }}
+            value={0}
+            label="about"
+          />
+          <Tab
+            component={Link}
+            to={routes[1]}
+            sx={{ fontSize: "medium" }}
+            value={1}
+            label="my projects"
+          />
+          <Tab
+            component={Link}
+            to={routes[2]}
+            sx={{ fontSize: "medium" }}
+            value={2}
+            label="cv"
+          />
+          <Tab
+            component={Link}
+            to={routes[3]}
+            sx={{ fontSize: "medium" }}
+            value={3}
+            label="contact"
+          />
         </Tabs>
-      </Grid>
-      <Grid item xs={11}>
-        <Grid>
-          <TabPanel value={value} index={0}>
-            <About />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            <Projects />
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <CV />
-          </TabPanel>
-          <TabPanel value={value} index={3}>
-            <Contact />
-          </TabPanel>
-        </Grid>
-      </Grid>
-    </Grid>
+      </nav>
+      <Box sx={{mt:4}}>
+        <Outlet />
+      </Box>
+    </div>
   );
 }
 
 //sx={{ mt: "1%" }}
+
+/*
+<Grid container spacing={2} justify="centre">
+      <Grid item xs={11} style={{ textAlign: "center" }}>
+      */
