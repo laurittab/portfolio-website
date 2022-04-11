@@ -10,7 +10,7 @@ export default function App() {
 
   /*only works when rerender screen*/
   function getStyling(){
-    if (window.innerWidth < 600) return "500vh";
+    if (window.innerWidth < 600) return "550vh";
     else return "150vh";
   }
   const styles = {

@@ -88,8 +88,7 @@ export default function Projects() {
           title="React Website and Contact form"
           asset="https://cdn.glitch.global/02995824-9536-4918-8e4f-00dcb083b1bd/thumbnails%2Fsubmit.PNG?1647102552402"
           alt="react website"
-          text="Full feature website using Material UI library and EmailJS. Styling for the site is primaryly completed using MUI's powerful tools. Visitors recieve an auto reply to their contact email address after using the contact form.
-              service."
+          text="Full feature website using React Routing, Material UI library and EmailJS service. Styling for the site is primaryly completed using MUI's powerful tools. Visitors recieve an auto reply to their contact email address after submitting the contact form."
           href="https://laurittaburrows.tech/"
         />
       </Grid>

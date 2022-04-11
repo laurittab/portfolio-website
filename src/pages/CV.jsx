@@ -30,7 +30,7 @@ export default function CV() {
           variant="outlined"
           size="large"
           /*copy link address from download button in github*/
-          href="https://github.com/laurittab/CV/raw/a1271efe2d157c1b109ed92a92561e6a2d72742e/Lauritta%20Burrows%20CV%20-%20Software%20Developer%20-%20March%202022%20.docx"
+          href="https://github.com/laurittab/CV/raw/main/Lauritta%20Burrows%20CV%20-%20Software%20Developer.docx"
           className="download"
         >
           <Typography variant="h5" color="secondary">
@@ -70,9 +70,9 @@ export default function CV() {
           Skills
         </Typography>
         <Typography component={"ul"} variant="body1" className="darkFont">
-          <li>Unix & GitHub</li>
-          <li>React, Node js</li>
-          <li>Python & Java</li>
+          <li>Linux, GitHub</li>
+          <li>React, Node js </li>
+          <li>Python, Java</li>
           <li>Researching trends</li>
           <li>Bootstrap, Material UI</li>
           <li>SQL</li>
@@ -86,7 +86,7 @@ export default function CV() {
         </Typography>
         <Typography component={"ul"} variant="body1" className="darkFont">
           <li>2022 SQLite3 & Node js</li>
-          <li>2021 React</li>
+          <li>2021 React & Material UI</li>
           <li>2020 Web Programming & Javascript</li>
           <li>2019 Level 2 IT User & Java</li>
           <li>2019 Level 2 Lean Organisational Management Techniques</li>
